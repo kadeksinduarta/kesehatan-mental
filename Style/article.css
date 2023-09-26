@@ -276,34 +276,8 @@ footer .Copyright {
     text-decoration: underline;
   }
 
-  /* mengatur agar judul HMH sejajar ke kiri */
-  .footer-title {
-    text-align: left;
-    padding: 10px 0;
-  }
-
-  /* memeperlihatkan label yang tadinya display none sekarang menjadi block */
-  footer .sosial-media-footer label {
-    display: block;
-    margin-left: 10px;
-  }
-
-  /* style pembungkus icon media sosial */
-  .sosial-media-footer {
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-  }
-
-  /* style icon media sosial */
-  .sosial-media-footer li {
-    margin: 8px 0px 5px;
-    display: flex;
-    text-align: center;
-  }
-
   /* style paragraf yang isi class .Copyright */
   footer .Copyright {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
