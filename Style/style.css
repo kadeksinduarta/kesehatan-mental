@@ -48,7 +48,7 @@ body {
   z-index: 1;
 }
 
-/* style Judul */
+/* style Judul di navbar*/
 .navbar .navbar-title a {
   font-size: 35px;
   font-weight: 700;
@@ -194,7 +194,7 @@ body {
   padding: 25px;
   line-height: 25px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(81, 81, 81, 0.5);
+  box-shadow: 0px 0px 10px #51515180;
 }
 
 /* style heading di card poblem */
@@ -219,11 +219,90 @@ body {
 }
 
 /* style footer */
-footer {
-  padding: 20px 0;
+footer .pembungkus-content {
+  padding: 20px 6%;
   text-align: center;
-  background-color: #d9d9d9;
+  background-color: #4d4d4d;
   margin-top: 50px;
+  box-shadow: 0px -5px 10px rgba(99, 99, 99, 1);
+}
+
+/* style title HMH di footer */
+footer .pembungkus-content .footer-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #28cbff;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 6px;
+  filter: drop-shadow(0px 0px 1px #989898);
+  display: block;
+  padding-bottom: 20px;
+}
+
+/* style pembungkus link di footer */
+footer .footer-link {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(120, 120, 120);
+}
+
+/* style link di footer */
+footer .footer-link li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+/* style link di footer */
+footer .footer-link a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+/* style link di footer ketika di hover */
+footer .footer-link a:hover {
+  color: #dcdcdc;
+}
+
+/* style paragraf di footer */
+footer p {
+  padding: 5px 0;
+  color: #d8d8d8;
+}
+
+/* style pembungkus icon media sosial */
+.sosial-media-footer {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 150px;
+}
+
+/* style label/ nema media sosial */
+footer .sosial-media-footer label {
+  display: none;
+}
+
+/* style icon media sosial */
+.sosial-media-footer li {
+  color: #8f8f8f;
+}
+
+/* style icon media sosial ketika di hover */
+.sosial-media-footer li:hover {
+  color: #28cbff;
+}
+
+/* style paragaraf yang isi class Copyright */
+footer .Copyright {
+  padding: 10px 0;
+  background-color: #636363;
+  text-align: center;
 }
 
 /* ================= RESPONSIVE ===============*/
@@ -384,6 +463,57 @@ footer {
   .Article .gambar,
   .meditasi .gambar {
     display: none;
+  }
+
+  /* mengatur agar judul HMH sejajar ke kiri */
+  .footer-title {
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  /* mengatur link di footer agar berjejer ke bawah yang tadinya ke kanan */
+  footer .footer-link {
+    flex-direction: column;
+    text-align: left;
+    /* padding: 10px 20% 10px 6%; */
+  }
+
+  /* mengatur li supaya setiap link ada jarak nya */
+  footer .footer-link li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 0px;
+  }
+
+  /* memeperlihatkan label yang tadinya display none sekarang menjadi block */
+  footer .sosial-media-footer label {
+    display: block;
+    margin-left: 10px;
+  }
+
+  /* style paragraf di footer */
+  footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* style pembungkus icon media sosial */
+  .sosial-media-footer {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* style icon media sosial */
+  .sosial-media-footer li {
+    margin: 8px 0px 5px;
+    display: flex;
+    text-align: center;
+  }
+
+  /* style paragraf yang isi class .Copyright */
+  footer .Copyright {
+    font-size: 15px;
   }
 }
 

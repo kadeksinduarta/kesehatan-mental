@@ -168,13 +168,61 @@ h1 {
 }
 
 /* style footer */
-footer {
-  margin-top: 50px;
-  padding: 20px 0;
+footer .pembungkus-content {
+  padding: 20px 6%;
   text-align: center;
-  background-color: #d9d9d9;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  background-color: #4d4d4d;
+  margin-top: 50px;
+}
+
+/* style title HMH di footer */
+footer .pembungkus-content .footer-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #28cbff;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 6px;
+  display: block;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #929292;
+}
+
+/* style paragraf di footer */
+footer p {
+  padding: 5px 0;
+  color: #9f9f9f;
+}
+
+/* style pembungkus icon media sosial */
+.sosial-media-footer {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 150px;
+}
+
+/* style label/ nema media sosial */
+footer .sosial-media-footer label {
+  display: none;
+}
+
+/* style icon media sosial */
+.sosial-media-footer li {
+  color: #8f8f8f;
+}
+
+/* style icon media sosial ketika di hover */
+.sosial-media-footer li:hover {
+  color: #28cbff;
+}
+
+/* style paragaraf yang isi class Copyright */
+footer .Copyright {
+  padding: 10px 0;
+  background-color: #636363;
+  text-align: center;
 }
 
 /* ================= RESPONSIVE ===============*/
@@ -262,6 +310,43 @@ footer {
   .manfaat-meditasi-2 li::before {
     top: 0px;
     left: -6%;
+  }
+
+  /* mengatur agar judul HMH sejajar ke kiri */
+  .footer-title {
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  /* memeperlihatkan label yang tadinya display none sekarang menjadi block */
+  footer .sosial-media-footer label {
+    display: block;
+    margin-left: 10px;
+  }
+
+  /* style paragraf di footer */
+  footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* style pembungkus icon media sosial */
+  .sosial-media-footer {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* style icon media sosial */
+  .sosial-media-footer li {
+    margin: 8px 0px 5px;
+    display: flex;
+    text-align: center;
+  }
+
+  /* style paragraf yang isi class .Copyright */
+  footer .Copyright {
+    font-size: 15px;
   }
 }
 
