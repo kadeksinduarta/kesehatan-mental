@@ -268,12 +268,6 @@ footer .footer-link a:hover {
   color: #dcdcdc;
 }
 
-/* style paragraf di footer */
-footer p {
-  padding: 5px 0;
-  color: #d8d8d8;
-}
-
 /* style pembungkus icon media sosial */
 .sosial-media-footer {
   margin: 30px auto;
@@ -489,12 +483,6 @@ footer .Copyright {
   footer .sosial-media-footer label {
     display: block;
     margin-left: 10px;
-  }
-
-  /* style paragraf di footer */
-  footer p {
-    font-size: 15px;
-    text-align: center;
   }
 
   /* style pembungkus icon media sosial */
