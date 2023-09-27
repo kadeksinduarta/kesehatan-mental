@@ -139,10 +139,15 @@ p {
 
 /* style footer */
 footer .pembungkus-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 6%;
   text-align: center;
-  background-color: #4d4d4d;
+  background-color: #d9d9d9;
   margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px -5px 10px rgba(99, 99, 99, 0.5);
 }
 
 /* style title HMH di footer */
@@ -153,18 +158,35 @@ footer .pembungkus-content .footer-title {
   color: #28cbff;
   font-family: "Luckiest Guy", cursive;
   letter-spacing: 6px;
-  display: block;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #929292;
+  filter: drop-shadow(0px 0px 1px #989898);
+}
+
+/* style pembungkus link di footer */
+footer .footer-link {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 30%;
+}
+
+/* style link di footer */
+footer .footer-link a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #383838;
+}
+
+/* style link di footer ketika di hover */
+footer .footer-link a:hover {
+  color: #9f9f9f;
 }
 
 /* style pembungkus icon media sosial */
 .sosial-media-footer {
-  margin: 30px auto;
   display: flex;
   justify-content: space-around;
   list-style: none;
-  width: 150px;
+  width: 10%;
 }
 
 /* style label/ nema media sosial */
@@ -185,8 +207,12 @@ footer .sosial-media-footer label {
 /* style paragaraf yang isi class Copyright */
 footer .Copyright {
   padding: 10px 0;
-  background-color: #636363;
+  background-color: #d9d9d9;
   text-align: center;
+  border-top: 1px solid #000;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ================= RESPONSIVE ===============*/
@@ -213,6 +239,42 @@ footer .Copyright {
   .menu-article {
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  /* mengatur agar judul HMH sejajar ke kiri */
+  footer .pembungkus-content .footer-title {
+    font-size: 25px;
+  }
+
+  /* mengatur link di footer agar berjejer ke bawah yang tadinya ke kanan */
+  footer .footer-link {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* mengatur li supaya setiap link ada jarak nya */
+  footer .footer-link li {
+    margin: 5px 0px;
+  }
+
+  /* memeperlihatkan label yang tadinya display none sekarang menjadi block */
+  footer .sosial-media-footer label {
+    display: block;
+    margin-left: 10px;
+  }
+
+  /* style pembungkus icon media sosial */
+  .sosial-media-footer {
+    flex-direction: column;
+    text-align: left;
+    width: 20%;
+  }
+
+  /* style icon media sosial */
+  .sosial-media-footer li {
+    margin: 8px 0px 5px;
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -276,8 +338,29 @@ footer .Copyright {
     text-decoration: underline;
   }
 
-  /* style paragraf yang isi class .Copyright */
-  footer .Copyright {
-    font-size: 13px;
+  footer .pembungkus-content {
+    flex-direction: column;
+  }
+
+  /* mengatur agar judul HMH sejajar ke kiri */
+  footer .pembungkus-content .footer-title {
+    text-align: left;
+    width: 100%;
+  }
+
+  footer .footer-link {
+    width: 100%;
+    text-align: left;
+  }
+
+  .sosial-media-footer {
+    width: 100%;
+    justify-content: left;
+    flex-direction: row;
+  }
+
+  /* menghilangkan label yang tadinya display block sekarang menjadi none */
+  footer .sosial-media-footer label {
+    display: none;
   }
 }

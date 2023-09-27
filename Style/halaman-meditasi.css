@@ -110,6 +110,7 @@ nav {
   background-color: transparent;
   border: 2px solid #28cbff;
   color: #28cbff;
+  cursor: pointer;
 }
 
 /* animasi untuk bg nya agar zoomIn dan zoomOut */
